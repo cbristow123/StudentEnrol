@@ -13,8 +13,12 @@ class Course {
 	int numberOfStudents
 	double tuitionFees
 	String studyMode
-	
-      static constraints = {
+//Represent instance of class with the class name
+	String toString(){
+	return courseTitle
+	}	
+
+static constraints = {
 
 //Writing Constraints
 	courseTitle nullable:false, blank:false
@@ -28,4 +32,5 @@ class Course {
 	description nullable:false, blank:false, size: 1..5000, widget:'textarea'
 	tuitionFees nullable:false, blank:false, scale:2
 	}	
+static hasMany = [students:Student] // 1 to many relationship. secondpart is declaration of belongsTo statement	
 }

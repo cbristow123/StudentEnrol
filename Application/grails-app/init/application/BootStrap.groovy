@@ -47,7 +47,7 @@ isFundingAvailable: 'True',
 studentEmail: 'Billy123@gmail.com',
 studentUsername: 'b123456',
 studentPassword: 'Password',
-course: 'Computer Science').save()
+courseEnrolled:Course2).save()
 
 def Student2=new com.enrol.Student(
 studentName: 'Callum',
@@ -57,7 +57,7 @@ isFundingAvailable: 'True',
 studentEmail: 'Callum123@gmail.com',
 studentUsername: 'c123456',
 studentPassword: 'Password',
-course: 'Cyber Security').save()
+courseEnrolled:Course2).save()
 
 def Module1=new com.enrol.Module(
 module_title: 'Web App Development',
@@ -90,6 +90,17 @@ subject: 'Computer Science',
 lecturerEmail: 'AdeliaDunn@gmail.com',
 office: 'Computing Building Room 128',
 bio: 'Teaching Computer Science for 5 years').save()
+
+//def st1=new com.enrol.Student(
+//studentID:'11',
+//studentName:'Jack',
+//lastName:'Wills',
+//dob: 2/20/16,
+//studentEmail: 'jack@gmail.com',
+//studentUsername: 'jj',
+//studentPassword: 'gg',
+//isFundingAvailable: 'True',
+//courseEnrolled:Course2).save()
 
 
 }
