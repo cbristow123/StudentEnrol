@@ -26,7 +26,7 @@
 			<h3> Student Enrolment </h3>
 			<p> placeholder </p>
 			<button type="button" class="btn btn-success">
-			<g:link controller="student" action="create" Enrol Student </g:link>
+			<g:link controller="student" action="create"> Enrol Student </g:link>
 			</button>
 		</div>
 	</td>
