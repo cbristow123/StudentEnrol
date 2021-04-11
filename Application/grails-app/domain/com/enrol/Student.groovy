@@ -9,11 +9,11 @@ class Student {
 	String studentEmail
 	String studentUsername
 	String studentPassword
-	String course// declared as a foreign key in bootstrap. 1-1 relationship.
+	//String course// declared as a foreign key in bootstrap. 1-1 relationship.
 
-	//String toString(){
-	//return studentName
-	//}	
+	String toString(){
+	return studentName
+	}	
 
     
 static constraints = {
