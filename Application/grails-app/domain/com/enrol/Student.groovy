@@ -9,8 +9,7 @@ class Student {
 	String studentEmail
 	String studentUsername
 	String studentPassword
-	//String course
-	Course courseEnrolled // declared as a foreign key in bootstrap. 1-1 relationship.
+	//String course// declared as a foreign key in bootstrap. 1-1 relationship.
 
 	//String toString(){
 	//return studentName
@@ -30,8 +29,8 @@ static constraints = {
 	isFundingAvailable nullable:false, blank:false
 	//course nullable:false, blank:false
     	}
-//static hasMany = [course:Course] // m:m relationship. This requires belongto statement to indicate the ownership of the relation.	
-//static belongsTo = [course:Course] // belongsTo indicates ownership of relation. this has to be declared while creating 1:1 relationship. This has to be declared for 1:m.
+static hasMany = [modulee:Module] // m:m relationship. This requires belongto statement to indicate the ownership of the relation.	
+static belongsTo = [course:Course, modulee:Module] // belongsTo indicates ownership of relation. this has to be declared while creating 1:1 relationship. This has to be declared for 1:m.
 
 //UNCOMMENT ALL ABOVE AND IT WILL WORK. ITS ONLY COMMENTED OUT COS OF HARDCODING THE BOOTSTRAP.
 }

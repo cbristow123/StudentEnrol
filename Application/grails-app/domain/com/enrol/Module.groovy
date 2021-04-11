@@ -9,6 +9,9 @@ class Module {
 	String lecturer
 	String course
 	String description
+	String toString(){
+	return module_title
+	}	
     static constraints = {
 
 //declaring constraints
@@ -18,4 +21,6 @@ class Module {
 	lecturer nullable:false, blank:false
 	description nullable:false, blank:false, size: 1..5000, widget:'textarea'
     }
+static hasMany = [coursezz:Course, studenttt:Student]
+static belongsTo = [lecturers:Lecturer, course:Course]
 }

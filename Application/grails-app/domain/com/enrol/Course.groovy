@@ -32,5 +32,5 @@ static constraints = {
 	description nullable:false, blank:false, size: 1..5000, widget:'textarea'
 	tuitionFees nullable:false, blank:false, scale:2
 	}	
-static hasMany = [students:Student] // 1 to many relationship. secondpart is declaration of belongsTo statement	
+static hasMany = [students:Student, lecturer:Lecturer, module:Module] // 1 to many relationship. secondpart is declaration of belongsTo statement	
 }
