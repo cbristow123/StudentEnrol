@@ -3,7 +3,7 @@ package application
 class BootStrap {
 
     def init = { servletContext ->
-def Course1=new com.enrol.Course(
+/*def Course1=new com.enrol.Course(
 department: 'Computing',
 courseCode: 'CS123',
 courseTitle: 'BSc Hons Computing',
@@ -46,8 +46,8 @@ dob: new Date('23/09/1997'),
 isFundingAvailable: 'True',
 studentEmail: 'Billy123@gmail.com',
 studentUsername: 'b123456',
-studentPassword: 'Password',
-courseEnrolled:Course2).save()
+studentPassword: 'Password').save()
+//courseEnrolled:Course2).save()
 
 def Student2=new com.enrol.Student(
 studentName: 'Callum',
@@ -56,8 +56,8 @@ dob: new Date('23/10/1997'),
 isFundingAvailable: 'True',
 studentEmail: 'Callum123@gmail.com',
 studentUsername: 'c123456',
-studentPassword: 'Password',
-courseEnrolled:Course2).save()
+studentPassword: 'Password').save()
+//courseEnrolled:Course2).save()
 
 def Module1=new com.enrol.Module(
 module_title: 'Web App Development',
@@ -103,7 +103,7 @@ bio: 'Teaching Computer Science for 5 years').save()
 //isFundingAvailable: 'True',
 //courseEnrolled:Course2).save()
 
-
+*/
 }
     def destroy = {
     }
