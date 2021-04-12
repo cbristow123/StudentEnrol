@@ -51,6 +51,14 @@
 			<g:link controller="Lecturer" action="create"> Add Lecturer </g:link>
 			</button>	
 		</div>
+
+		<div class="first">
+			<h3>Simple Search</h3>
+			<p> Search placeholder </p>
+			<button type="button" class="btn btn-success">
+			<g:link controller="student" action="search">Search</g:link>
+			</button>
+		</div>
 	</td>
 	</tr>
 	</div>
